@@ -1,0 +1,34 @@
+extends templates/master
+
+block vars
+
+block title
+  | 小酒窝
+block styles
+
+block content
+
+  .container.lottery 
+    .nubers-panel
+      span.number
+        a(id="first-number",class="btn btn-number") 0
+      span.number
+        a(id="second-number",class="btn btn-number") 0
+      span.number
+        a(id="third-number",class="btn btn-number") 0
+      span.number
+        a(id="forth-number",class="btn btn-number") 0
+      span.number
+        a(id="fifth-number",class="btn btn-number") 0
+    //marquee(direction="left" scrolldelay="1" loop=-1 scrollamount="20" )
+    p.result#result
+      恭喜
+      a(id="name",class="lottery-result") 
+      同学
+  .container.lottery.footer
+    .row
+      .col-xs-6
+        button(id="start-lottery",value="开始",class="btn btn-success btn-block"  name="click")开始
+      .col-xs-6
+        button.btn.btn-block(id="btn-end",value="开始",class="btn-danger" name="click") 结束
+
